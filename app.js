@@ -89,7 +89,7 @@ var currentLife=10;
 
 var checkButton = document.getElementById("check-button");
 
-checkButton=document.addEventListener("click", (e)=>{
+checkButton.addEventListener("click", (e)=>{
     e.preventDefault();
     var overlay=document.getElementById("overlay");
     var popup=document.getElementById("game-over-popup");
@@ -100,7 +100,7 @@ checkButton=document.addEventListener("click", (e)=>{
         popup.style.display="block";
         
             var gameReset = document.getElementById("restart-button");
-            gameReset=document.addEventListener("click", (e) => {
+            gameReset.addEventListener("click", (e) => {
                 e.preventDefault();
                 overlay.style.display = "none";
                 popup.style.display = "none";
