@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <script src="app.js" defer></script>
+    <title>Todo</title>
+</head>
+<body>
+    <h1>TODO APP</h1>
+    <section class="wrapper">
+        <form>
+            <input type="text" id="todo-input"
+            placeholder="write anything and hit enter to add" autocomplete="off">
+            <button id="add-button">Add</button>
+        </form>
+        <ul id="todo-list">  
+        </ul>
+    </section>
+    <br>
+    <h2>Predict the number</h2>
+    <section class="game">
+        <input  type="number" min="0" max="9" id="guess-input"
+            placeholder="enter the number between 0-9" autocomplete="off">
+        <button id="check-button">check</button>
+        <h3 id="number"></h3>
+        <h2 id="state">guess the number</h2>
+        
+        <h3 id="score">Your Score is : 0</h3>
+        <h3 id="life">Remaining Life is : 10</h3>
+        
+    </section>
+    <div id="overlay"></div>
+        <div id="game-over-popup">
+            <h2>game over</h2>
+            <button id="restart-button">restart</button>
+        </div>
+</body>
+</html>
